@@ -108,12 +108,12 @@ namespace UnitTest
            //BADREQUEST AND MODELSTATE ERROR TEST START
 
             //Arrange
-            var incompleteBooking = new Booking()
+            Booking incompleteBooking = new Booking()
             {
                 ID = "1",
                 FullName = "Rami Alkhateeb",
                 Phone = "85852552",
-                Email = "rami13alkhateeb@gmail.com",
+                Email = "rami13alkhateeb@gmail.com"
             };
 
             //Act
@@ -121,7 +121,7 @@ namespace UnitTest
             var badResponse = _controller.AddBooking(incompleteBooking);
 
             //Assert
-            Assert.IsType<BadRequestObjectResult>(badResponse);
+            Assert.IsType<BadRequestObjectResult>(badResponse.Result);
            
            
            
