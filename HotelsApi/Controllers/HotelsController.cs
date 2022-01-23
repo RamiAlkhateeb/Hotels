@@ -16,12 +16,8 @@ namespace HotelsAPI.Controllers
 
         private IHotelsService _service;
 
-        public HotelsController(
-            //ILogger<HotelsController> logger,
-            IHotelsService service
-        )
+        public HotelsController(IHotelsService service)
         {
-            //_logger = logger;
             _service = service;
         }
 
@@ -48,8 +44,10 @@ namespace HotelsAPI.Controllers
                 return BadRequest("request is incorrect");
             else
             {
-                _service.AddBooking(booking);
-                return booking;
+                if(_service.AddBooking(booking) != null)
+                    return booking;
+                else
+                    return NotFound();
             }
             
         }
@@ -57,7 +55,10 @@ namespace HotelsAPI.Controllers
         [HttpGet("/api/bookings/{id}")]
         public ActionResult<Booking> GetBooking(string id)
         {
-            return _service.GetBooking(id);
+            if(_service.GetBooking(id) != null)
+                return _service.GetBooking(id);
+            else
+                return NotFound();
         }
 
         [HttpPut("/api/bookings/{id}")]
@@ -73,13 +74,10 @@ namespace HotelsAPI.Controllers
                
         }
 
-        [HttpDelete("/api/hotels/{id}")]
+        [HttpDelete("/api/bookings/{id}")]
         public ActionResult<string> DeleteBooking(string id)
-        {
-            _service.DeleteBooking (id);
-
-            //_logger.LogInformation("hotels", _hotels);
-            return id;
+        {            
+            return _service.DeleteBooking (id);
         }
     }
 

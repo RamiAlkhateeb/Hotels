@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "f:\\WorkOct21\\Hotels\\HotelsApi\\HotelsAPI.csproj": {}
+    "F:\\WorkOct21\\Hotels\\HotelsApi\\HotelsAPI.csproj": {}
   },
   "projects": {
-    "f:\\WorkOct21\\Hotels\\HotelsApi\\HotelsAPI.csproj": {
+    "F:\\WorkOct21\\Hotels\\HotelsApi\\HotelsAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "f:\\WorkOct21\\Hotels\\HotelsApi\\HotelsAPI.csproj",
+        "projectUniqueName": "F:\\WorkOct21\\Hotels\\HotelsApi\\HotelsAPI.csproj",
         "projectName": "HotelsAPI",
-        "projectPath": "f:\\WorkOct21\\Hotels\\HotelsApi\\HotelsAPI.csproj",
+        "projectPath": "F:\\WorkOct21\\Hotels\\HotelsApi\\HotelsAPI.csproj",
         "packagesPath": "C:\\Users\\Rami\\.nuget\\packages\\",
-        "outputPath": "f:\\WorkOct21\\Hotels\\HotelsApi\\obj\\",
+        "outputPath": "F:\\WorkOct21\\Hotels\\HotelsApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Rami\\AppData\\Roaming\\NuGet\\NuGet.Config"

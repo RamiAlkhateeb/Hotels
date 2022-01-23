@@ -72,42 +72,55 @@ namespace HotelsAPI.Services
 
         public Booking UpdateBooking(string id, Booking BookingItem)
         {
-            var bookingItem = _bookingItems.Find(h => h.ID == id);
-            bookingItem = BookingItem;
+            var OldbookingItem = _bookingItems.Find(h => h.ID == id);
+            _bookingItems.Remove(OldbookingItem);
+            _bookingItems.Add(BookingItem);
             return BookingItem;
         }
 
         public string DeleteBooking(string id)
         {
             var bookingItem = _bookingItems.Find(h => h.ID == id);
-            if (bookingItem != null) _bookingItems.Remove(bookingItem);
+            if (bookingItem != null)
+                _bookingItems.Remove(bookingItem);
+            else
+                id = "Not Found";
             return id;
         }
 
         public Booking AddBooking(Booking bookingItem)
         {
             if (_hotelItems.Count == 0) _hotelItems = helper.SeedData();
-            Hotel hotel = _hotelItems.Find(h => h.ID == bookingItem.HotelId);
-            if (hotel != null)
+            var bookings = _bookingItems.Where(b => b.HotelId == bookingItem.HotelId).ToList();
+            var hotel = _hotelItems.Find(h => h.ID == bookingItem.HotelId);
+
+            if (bookings.Count > 0)
             {
-                hotel.Bookings = new List<Booking>();
                 var bookingCount =
                     hotel
                         .Bookings
                         .Where(b =>
-                            b.StartDate >= bookingItem.StartDate &&
-                            b.EndDate <= bookingItem.StartDate)
+                            b.StartDate >= bookingItem.StartDate ||
+                            b.EndDate <= bookingItem.EndDate)
                         .ToList()
                         .Count();
-                if (
-                    bookingCount >= hotel.RoomsCount // not available
-                )
+                if (bookingCount >= hotel.RoomsCount) // not available
                     bookingItem = null;
                 else
                 {
-                    _bookingItems.Add (bookingItem);
-                    hotel.Bookings = _bookingItems;
+                    hotel.Bookings = new List<Booking>();
+                    bookings.Add(bookingItem);
+                    _bookingItems.Add(bookingItem);
+                    hotel.Bookings= bookings;
                 }
+                
+            }
+            else
+            {
+                hotel.Bookings = new List<Booking>();
+                bookings.Add(bookingItem);
+                _bookingItems.Add(bookingItem);
+                hotel.Bookings= bookings;
             }
 
             return bookingItem;
