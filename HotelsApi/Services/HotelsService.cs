@@ -41,7 +41,7 @@ namespace HotelsAPI.Services
                         .ToList();
             }
 
-            if (minPrice > 0)
+            if (minPrice > 0 || maxPrice > 0)
             {
                 _hotelItems =
                     _hotelItems.Where(h => h.Price >= minPrice).ToList();
