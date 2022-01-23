@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "mWUV2rdMnBC6SGV70lYn4HL03sXulFYqBxEPWdvpa4FKkLK9FiUcr5Y4WfTaRL8E2waJoQbemVhPcEN/m5HZLA==",
+  "success": true,
+  "projectFilePath": "f:\\WorkOct21\\Hotels\\HotelsApi\\HotelsAPI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Rami\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
