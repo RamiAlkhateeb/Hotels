@@ -35,6 +35,13 @@ namespace HotelsAPI
             be accessed from anywhere throughout the application as a Singleton Class.
             */
             services.AddSingleton<IHotelsService, HotelsService>();
+            services.AddCors(options =>
+            {
+                options.AddPolicy("AllowAll",
+                    builder => builder.AllowAnyOrigin()
+                    .AllowAnyMethod()
+                    .AllowAnyHeader());
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -44,6 +51,8 @@ namespace HotelsAPI
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseCors("AllowAll");
 
             app.UseHttpsRedirection();
 
@@ -55,6 +64,8 @@ namespace HotelsAPI
             {
                 endpoints.MapControllers();
             });
+
+            
         }
     }
 }

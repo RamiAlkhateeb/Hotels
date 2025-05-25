@@ -1,30 +1,36 @@
 {
   "format": 1,
   "restore": {
-    "f:\\WorkOct21\\Hotels\\UnitTest\\UnitTest.csproj": {}
+    "D:\\Work\\Hotels\\UnitTest\\UnitTest.csproj": {}
   },
   "projects": {
-    "f:\\WorkOct21\\Hotels\\HotelsApi\\HotelsAPI.csproj": {
+    "D:\\Work\\Hotels\\HotelsApi\\HotelsAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "f:\\WorkOct21\\Hotels\\HotelsApi\\HotelsAPI.csproj",
+        "projectUniqueName": "D:\\Work\\Hotels\\HotelsApi\\HotelsAPI.csproj",
         "projectName": "HotelsAPI",
-        "projectPath": "f:\\WorkOct21\\Hotels\\HotelsApi\\HotelsAPI.csproj",
-        "packagesPath": "C:\\Users\\Rami\\.nuget\\packages\\",
-        "outputPath": "f:\\WorkOct21\\Hotels\\HotelsApi\\obj\\",
+        "projectPath": "D:\\Work\\Hotels\\HotelsApi\\HotelsAPI.csproj",
+        "packagesPath": "C:\\Users\\rami_\\.nuget\\packages\\",
+        "outputPath": "D:\\Work\\Hotels\\HotelsApi\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Rami\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\rami_\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net5.0"
+          "net9.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net5.0": {
-            "targetAlias": "net5.0",
+          "net9.0": {
+            "targetAlias": "net9.0",
             "projectReferences": {}
           }
         },
@@ -32,15 +38,25 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
+        "net9.0": {
+          "targetAlias": "net9.0",
           "dependencies": {
             "Newtonsoft.Json": {
               "target": "Package",
-              "version": "[13.0.1, )"
+              "version": "[13.0.3, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.9.3, )"
             }
           },
           "imports": [
@@ -49,7 +65,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -61,34 +78,40 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "f:\\WorkOct21\\Hotels\\UnitTest\\UnitTest.csproj": {
+    "D:\\Work\\Hotels\\UnitTest\\UnitTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "f:\\WorkOct21\\Hotels\\UnitTest\\UnitTest.csproj",
+        "projectUniqueName": "D:\\Work\\Hotels\\UnitTest\\UnitTest.csproj",
         "projectName": "UnitTest",
-        "projectPath": "f:\\WorkOct21\\Hotels\\UnitTest\\UnitTest.csproj",
-        "packagesPath": "C:\\Users\\Rami\\.nuget\\packages\\",
-        "outputPath": "f:\\WorkOct21\\Hotels\\UnitTest\\obj\\",
+        "projectPath": "D:\\Work\\Hotels\\UnitTest\\UnitTest.csproj",
+        "packagesPath": "C:\\Users\\rami_\\.nuget\\packages\\",
+        "outputPath": "D:\\Work\\Hotels\\UnitTest\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Rami\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\rami_\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net5.0"
+          "net9.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net5.0": {
-            "targetAlias": "net5.0",
+          "net9.0": {
+            "targetAlias": "net9.0",
             "projectReferences": {
-              "f:\\WorkOct21\\Hotels\\HotelsApi\\HotelsAPI.csproj": {
-                "projectPath": "f:\\WorkOct21\\Hotels\\HotelsApi\\HotelsAPI.csproj"
+              "D:\\Work\\Hotels\\HotelsApi\\HotelsAPI.csproj": {
+                "projectPath": "D:\\Work\\Hotels\\HotelsApi\\HotelsAPI.csproj"
               }
             }
           }
@@ -97,11 +120,17 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
+        "net9.0": {
+          "targetAlias": "net9.0",
           "dependencies": {
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
@@ -115,7 +144,7 @@
             },
             "xunit": {
               "target": "Package",
-              "version": "[2.4.1, )"
+              "version": "[2.9.3, )"
             },
             "xunit.runner.visualstudio": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -130,7 +159,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -139,7 +169,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
