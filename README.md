@@ -1,7 +1,6 @@
 
 # 📘 **README.md**
 
-````markdown
 # HotelsAPI – Upgraded and Deployed!
 
 This project is a simple ASP.NET Core Web API for managing hotel data. Today, I upgraded the project, added Docker support, implemented unit testing, and successfully deployed it.
@@ -20,7 +19,7 @@ This project is a simple ASP.NET Core Web API for managing hotel data. Today, I 
   ```bash
   docker build -t hotelsapi .
   docker run -d -p 5000:80 hotelsapi
-````
+
 
 * Access the API at `http://localhost:5000`.
 
@@ -81,50 +80,4 @@ This project is a simple ASP.NET Core Web API for managing hotel data. Today, I 
 * xUnit (Unit Testing)
 * Docker
 * .NET Upgrade Assistant
-
-```
-
----
-
-# ✍️ **Medium Post Draft** (Plain Text)
-
----
-
-# 🚀 Upgrading My .NET Web API to .NET 9 with Docker and xUnit  
-
-Today, I took my simple Hotels API project and gave it a massive upgrade! Here’s a quick summary of what I did:
-
----
-
-## 1️⃣ Upgraded from .NET 5 to .NET 9  
-Using the official **.NET Upgrade Assistant**, I migrated my project from .NET 5 to .NET 9. This process involved running upgrade commands, resolving dependency and NuGet issues, and verifying that everything was compatible with the new C# features.
-
----
-
-## 2️⃣ Added Docker Support  
-Next, I decided to containerize my API for easier deployment. I wrote a **Dockerfile** that builds and runs the project, successfully built the Docker image, and ran it locally. I was able to access my API at `http://localhost:5000`.
-
----
-
-## 3️⃣ Implemented Unit Testing with xUnit  
-To ensure my logic was solid, I created a new **xUnit test project** within the solution, wrote basic unit tests to cover key functionality, and ran the tests. I made sure everything passed before moving forward.
-
----
-
-## 4️⃣ Deployed to the Cloud  
-Finally, I deployed my Dockerized API to the cloud (using **Render/Railway/Azure**). I configured the cloud service to build from my GitHub repository, verified that the deployment was successful, and got a live endpoint to test with Postman.
-
----
-
-## 🏆 Key Takeaways  
-- The **.NET Upgrade Assistant** made migrating between versions smooth and easy.
-- **Docker** is essential for containerization and deployment.
-- **xUnit** is perfect for unit testing in .NET projects.
-- Cloud platforms like **Render**, **Railway**, or **Azure** make deployment a breeze.
-
----
-
-💬 Have you tried upgrading your .NET projects? Or adding Docker support? Let me know in the comments!
-
----
 
