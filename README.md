@@ -9,44 +9,9 @@ This project is a simple ASP.NET Core Web API for managing hotel data. Today, I 
 
 
 # Web API Architecture 
-```
 
-                     +--------------------------+
-                     |      Client (Postman,     |
-                     |      Browser, App)        |
-                     +------------+-------------+
-                                  |
-                                  v
-                       +----------+----------+
-                       |    HotelsAPI (.NET 9) |
-                       |     ASP.NET Core      |
-                       +----------+----------+
-                                  |
-                                  |
-               +------------------+------------------+
-               |                                     |
-      +--------+---------+                +----------+---------+
-      |     Controllers    |                |       Startup.cs   |
-      | (HotelsController) |                |     Configurations |
-      +--------+---------+                +----------+---------+
-               |                                     |
-               |                                     |
-   +-----------+------------+           +------------+-----------+
-   |       Business Logic     |           |      Middleware          |
-   | (Service Layer, if any)  |           |   (Error Handling, etc.) |
-   +-----------+------------+           +------------+-----------+
-               |                                     |
-               v                                     v
-        +-------------+                       +--------------+
-        |   Data Models  |                       |   Unit Tests   |
-        +-------------+                       +--------------+
-               |
-               v
-        +----------------+
-        |  Database (Optional) |
-        +----------------+
+![image](https://github.com/RamiAlkhateeb/Hotels/blob/main/ConceptualDiagramWebAPI.png)
 
-```
 
 ---
 
