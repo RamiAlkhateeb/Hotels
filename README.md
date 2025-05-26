@@ -9,6 +9,7 @@ This project is a simple ASP.NET Core Web API for managing hotel data. Today, I 
 
 
 # Web API Architecture 
+```
 
                      +--------------------------+
                      |      Client (Postman,     |
@@ -45,7 +46,7 @@ This project is a simple ASP.NET Core Web API for managing hotel data. Today, I 
         |  Database (Optional) |
         +----------------+
 
-
+```
 
 ---
 
