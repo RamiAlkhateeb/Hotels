@@ -5,12 +5,11 @@
 
 This project is a simple ASP.NET Core Web API for managing hotel data. Today, I upgraded the project, added Docker support, implemented unit testing, and successfully deployed it.
 
-![image](https://drive.google.com/file/d/1afvoKn0NT0HpPl-7ZVfJhhkpX9AQJsjq/view?usp=sharing)
+![image](https://github.com/RamiAlkhateeb/Hotels/blob/main/HotelsService.drawio.PNG?raw=true)
 
 
-# Web API Architecture (Markdown Diagram)
+# Web API Architecture 
 
-```plaintext
                      +--------------------------+
                      |      Client (Postman,     |
                      |      Browser, App)        |
